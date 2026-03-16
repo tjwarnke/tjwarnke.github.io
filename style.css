@@ -1,54 +1,4 @@
 body{
-font-family: Arial;
-margin:0;
-background:#f4f4f4;
-color:#333;
-}
-
-header{
-background:#1f3864;
-color:white;
-padding:40px;
-text-align:center;
-}
-
-.hero{
-padding:60px;
-text-align:center;
-}
-
-a{
-background:#2e75b6;
-color:white;
-padding:10px 20px;
-text-decoration:none;
-margin:10px;
-border-radius:5px;
-}
-.projects{
-max-width:900px;
-margin:auto;
-padding:40px;
-}
-
-.project-card{
-background:white;
-padding:25px;
-margin-top:25px;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-.project-card h3{
-margin-top:0;
-}
-
-.project-card a{
-display:inline-block;
-margin: top 10px;
-}
-
-body{
 font-family: Arial, sans-serif;
 margin:0;
 background:#f4f4f4;
@@ -77,8 +27,60 @@ font-weight:bold;
 text-decoration:underline;
 }
 
+.hero{
+text-align:center;
+padding:60px;
+max-width:800px;
+margin:auto;
+}
+
+.button{
+background:#2e75b6;
+color:white;
+padding:10px 20px;
+margin:10px;
+display:inline-block;
+text-decoration:none;
+border-radius:5px;
+}
+
+.highlights{
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+.highlight-card{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.projects{
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+.project-card{
+background:white;
+padding:25px;
+margin-top:25px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact{
+max-width:700px;
+margin:auto;
+padding:40px;
+}
+
 footer{
 text-align:center;
 padding:20px;
 background:#ddd;
+margin-top:40px;
 }
