@@ -6,15 +6,15 @@
 <title>Projects | Thomas Warnke</title>
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Software and aviation projects by Thomas Warnke.">
 <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
 
 <header>
-
 <h1>Thomas Warnke</h1>
-<p>Software Developer | Technical Communicator | CFII</p>
+<p class="tagline">Aircraft Dispatcher &nbsp;·&nbsp; Software Developer &nbsp;·&nbsp; Flight Instructor</p>
 
 <nav class="navbar">
 <a href="index.html">Home</a>
@@ -24,120 +24,103 @@
 </nav>
 </header>
 
+<main>
+
 <section class="projects">
 
-<h2>Technical Projects</h2>
-
-<div class="project-card">
-
-<h3>Game Development Project</h3>
-
-<p>
-Collaborative software project developed during computer science coursework.
-The system was presented in a live demo explaining architecture,
-game mechanics, and development decisions.
+<h2>Projects</h2>
+<p class="section-intro">
+A mix of coursework, team builds, and things I made because I needed them. Most of the code
+is on <a href="https://github.com/tjwarnke">GitHub</a>.
 </p>
 
-<ul>
-<li>Engine: Godot</li>
-<li>Languages: GDScript</li>
-<li>Focus: Gameplay systems and UI</li>
-</ul>
-
-<a href="https://github.com/tjwarnke/hiint">View Project Github</a>
-
-</div>
+<div class="project-grid">
 
 <div class="project-card">
-
-<h3>Android App Development</h3>
-
+<h3>Music-captioning model</h3>
+<p class="tags">Python &nbsp;·&nbsp; machine learning &nbsp;·&nbsp; team project</p>
 <p>
-Collaborative software project developed during computer science coursework.
-The system was presented in a live demo explaining architecture,
-features, and development decisions. 
+Trained on Google&rsquo;s MusicCaps dataset, it takes features pulled from a music clip and
+writes a short text description of it. We wrote the algorithm ourselves instead of leaning on
+a high-level library, so we dealt with the whole pipeline: data prep, training, and checking
+how well it did.
 </p>
-
-<ul>
-<li>Language: Kotlin</li>
-<li>Platform: Android</li>
-<li>Focus: full stack development and collaboration</li>
-</ul>
-
-<a href="https://github.com/tjwarnke/Control_D">View Project Github</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>Machine Learning Project</h3>
-
 <p>
-This was a class project focused on implementing a machine learning algorithm 
-to solve a specific problem. The project involved data preprocessing, model training, 
-and evaluation, with an emphasis on explaining the technical details and results in a 
-clear and structured manner. This model was trained on the MusicCaps dataset from google, and 
-was designed to generate text descriptions of music clips based on the audio features extracted from the dataset. 
-This project allowed me to become familiar with machine learning libraries and concepts, as we were working entirely from scratch.
+It isn&rsquo;t finished. The pipeline runs end to end &mdash; architecture, training loop,
+evaluation &mdash; but training runs were far too slow on the hardware we had, so the model is
+under-trained rather than done. The interesting part, building it from the ground up, is all
+there.
 </p>
-
-<ul>
-<li>Object-oriented programming</li>
-<li>Algorithms and data structures</li>
-<li>Software debugging and testing</li>
-<li>Machine learning concepts and implementation</li>
-<li>Collaboration on complex tasks and ideas</li>
-</ul>
-
-<a href="https://github.com/tjwarnke/MLProject">View Project Github</a>
-<a href="the_model.ipynb">View Model</a>
-
-</div>
-<div class="project-card">
-
-<h3>Certified Flight Instructor Training Binder</h3>
-
-<p>
-Comprehensive training binder designed and organized to support
-flight instruction and pilot training. The binder contains structured
-lesson plans, diagrams, and explanations for key aviation topics.
-This is a live document and the current posted is only a snapshot of the full binder, 
-which is regularly updated and used as a reference during instructional training. 
-The fundamentals of instruction section is incomplete as I found the one provided by 
-BackseatPilot was more comprehensive and better organized than the one I was creating, 
-so I have been using that as a reference instead of creating my own. The rest of the binder 
-is still in use and regularly updated with new material as I continue to develop my 
-instructional skills and knowledge.
+<p class="links">
+<a href="https://github.com/tjwarnke/MLProject">GitHub</a>
+<a href="the_model.ipynb">Notebook</a>
 </p>
-
-<ul>
-<li>Created structured lesson plans for pilot training</li>
-<li>Organized technical aviation material for teaching</li>
-<li>Designed visual explanations for complex concepts</li>
-<li>Used as a reference during instructional training</li>
-</ul>
-
-<a href="Binder.docx">View Binder</a>
-
 </div>
 
-</div>
 <div class="project-card">
-
-<h3>Inventory Tracking with Excel</h3>
-
+<h3>Android app &mdash; Control_D</h3>
+<p class="tags">Kotlin &nbsp;·&nbsp; Android &nbsp;·&nbsp; full stack &nbsp;·&nbsp; team project</p>
 <p>
-This project is an inventory tracking system developed using Microsoft Excel. 
-It allows the user to input, change, and manage labels for canning beer. This is 
-used for my production duties at Shakopee Brewhall. It is quite simple, but a proof of concept
-of excel and a good starting point for a more complex inventory tracking system, 
-one that might even be collaborative.
-<ul>
+A collaborative Android application built over a semester and presented in a live demo
+walking through the architecture, the feature set, and the decisions behind them. My focus
+was full-stack work and keeping the team&rsquo;s pieces fitting together.
+</p>
+<p class="links">
+<a href="https://github.com/tjwarnke/Control_D">GitHub</a>
+</p>
+</div>
 
-<a href="labels.xlsm">View Excel File</a>
+<div class="project-card">
+<h3>Game &mdash; hiint</h3>
+<p class="tags">Godot &nbsp;·&nbsp; GDScript &nbsp;·&nbsp; team project</p>
+<p>
+A game built with a small team in the Godot engine. I worked on gameplay systems and UI,
+and we presented the project in a live architecture review covering how the pieces fit and
+why we structured them the way we did.
+</p>
+<p class="links">
+<a href="https://github.com/tjwarnke/hiint">GitHub</a>
+</p>
+</div>
+
+<div class="project-card">
+<h3>CFI training binder</h3>
+<p class="tags">flight instruction &nbsp;·&nbsp; technical writing</p>
+<p>
+A working reference binder for flight instruction: structured lesson plans, diagrams, and
+plain-language explanations of key aviation topics. It&rsquo;s a live document I keep adding
+to as I instruct; the posted copy is a snapshot.
+</p>
+<p class="links">
+<a href="Binder.docx">Download (.docx)</a>
+</p>
+</div>
+
+<div class="project-card">
+<h3>Canning-line inventory tracker</h3>
+<p class="tags">Excel &nbsp;·&nbsp; VBA macros</p>
+<p>
+A small Excel tool I built for my production shifts at Shakopee Brewhall to input and manage
+labels for the canning line. Simple by design &mdash; a proof of concept for a fuller,
+possibly collaborative, inventory system.
+</p>
+<p class="links">
+<a href="labels.xlsm">Download (.xlsm)</a>
+</p>
+</div>
 
 </div>
+
 </section>
+
+</main>
+
+<footer>
+<p>Thomas Warnke &nbsp;·&nbsp; Eden Prairie, MN &nbsp;·&nbsp;
+<a href="mailto:t.j.warnke@gmail.com">t.j.warnke@gmail.com</a> &nbsp;·&nbsp;
+<a href="https://github.com/tjwarnke">GitHub</a> &nbsp;·&nbsp;
+<a href="https://www.linkedin.com/in/tjwarnke/">LinkedIn</a></p>
+</footer>
 
 </body>
 </html>
