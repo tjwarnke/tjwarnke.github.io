@@ -19,7 +19,7 @@
 <nav class="navbar">
 <a href="index.html">Home</a>
 <a href="projects.html" class="active">Projects</a>
-<a href="resume.pdf">Resume</a>
+<a href="resume.pdf">Resumé</a>
 <a href="contact.html">Contact</a>
 </nav>
 </header>
@@ -30,26 +30,41 @@
 
 <h2>Projects</h2>
 <p class="section-intro">
-A mix of coursework, team builds, and things I made because I needed them. Most of the code
-is on <a href="https://github.com/tjwarnke">GitHub</a>.
+Some of this is schoolwork, some I built with other people, and a couple I made because I
+needed them. Most of the code is on <a href="https://github.com/tjwarnke">GitHub</a>.
 </p>
 
 <div class="project-grid">
 
 <div class="project-card">
+<h3>Flight-school platform</h3>
+<p class="tags">Next.js &nbsp;·&nbsp; Supabase &nbsp;·&nbsp; Stripe &nbsp;·&nbsp; in progress</p>
+<p>
+This one is a system for running a small flight school. Scheduling, the syllabus and lessons,
+dispatching airplanes, a digital logbook the instructor signs, a risk check before every
+flight, and billing, all in one place. Most schools do this with paper, a few spreadsheets,
+and whatever calendar they already use, and how good your training is comes down a lot to
+which instructor you get.
+</p>
+<p>
+I want to change that. Every student on the same real syllabus, and records that actually hold
+up later. It comes out of my own time instructing and dispatching. Not live yet, but soon.
+</p>
+</div>
+
+<div class="project-card">
 <h3>Music-captioning model</h3>
 <p class="tags">Python &nbsp;·&nbsp; machine learning &nbsp;·&nbsp; team project</p>
 <p>
-Trained on Google&rsquo;s MusicCaps dataset, it takes features pulled from a music clip and
-writes a short text description of it. We wrote the algorithm ourselves instead of leaning on
-a high-level library, so we dealt with the whole pipeline: data prep, training, and checking
-how well it did.
+A group project. It takes a short clip of music and tries to write a sentence describing it,
+trained on Google&rsquo;s MusicCaps dataset. We didn&rsquo;t use a machine learning library for
+the core of it, we wrote the algorithm ourselves, so we handled the whole thing. Cleaning the
+data, training, testing how it did.
 </p>
 <p>
-It isn&rsquo;t finished. The pipeline runs end to end &mdash; architecture, training loop,
-evaluation &mdash; but training runs were far too slow on the hardware we had, so the model is
-under-trained rather than done. The interesting part, building it from the ground up, is all
-there.
+It isn&rsquo;t finished. The pipeline runs, but training was really slow on the computers we
+had, so the model never got trained as far as it needed to. The hard part was building it from
+scratch, and that part works.
 </p>
 <p class="links">
 <a href="https://github.com/tjwarnke/MLProject">GitHub</a>
@@ -58,12 +73,12 @@ there.
 </div>
 
 <div class="project-card">
-<h3>Android app &mdash; Control_D</h3>
+<h3>Control_D (Android app)</h3>
 <p class="tags">Kotlin &nbsp;·&nbsp; Android &nbsp;·&nbsp; full stack &nbsp;·&nbsp; team project</p>
 <p>
-A collaborative Android application built over a semester and presented in a live demo
-walking through the architecture, the feature set, and the decisions behind them. My focus
-was full-stack work and keeping the team&rsquo;s pieces fitting together.
+An Android app I built with a team over a semester. At the end we demoed it and walked through
+how it was put together and why. I worked across the stack and spent a lot of time making sure
+everyone&rsquo;s pieces fit together.
 </p>
 <p class="links">
 <a href="https://github.com/tjwarnke/Control_D">GitHub</a>
@@ -71,12 +86,11 @@ was full-stack work and keeping the team&rsquo;s pieces fitting together.
 </div>
 
 <div class="project-card">
-<h3>Game &mdash; hiint</h3>
+<h3>hiint (game)</h3>
 <p class="tags">Godot &nbsp;·&nbsp; GDScript &nbsp;·&nbsp; team project</p>
 <p>
-A game built with a small team in the Godot engine. I worked on gameplay systems and UI,
-and we presented the project in a live architecture review covering how the pieces fit and
-why we structured them the way we did.
+A game a few of us made in Godot. I worked on gameplay systems and the UI. We showed it off at
+the end and talked through how it was built.
 </p>
 <p class="links">
 <a href="https://github.com/tjwarnke/hiint">GitHub</a>
@@ -87,9 +101,8 @@ why we structured them the way we did.
 <h3>CFI training binder</h3>
 <p class="tags">flight instruction &nbsp;·&nbsp; technical writing</p>
 <p>
-A working reference binder for flight instruction: structured lesson plans, diagrams, and
-plain-language explanations of key aviation topics. It&rsquo;s a live document I keep adding
-to as I instruct; the posted copy is a snapshot.
+My reference binder for teaching. Lesson plans, diagrams, and explanations for the topics I go
+over with students. I add to it all the time, so what&rsquo;s posted here is just a snapshot.
 </p>
 <p class="links">
 <a href="Binder.docx">Download (.docx)</a>
@@ -100,9 +113,9 @@ to as I instruct; the posted copy is a snapshot.
 <h3>Canning-line inventory tracker</h3>
 <p class="tags">Excel &nbsp;·&nbsp; VBA macros</p>
 <p>
-A small Excel tool I built for my production shifts at Shakopee Brewhall to input and manage
-labels for the canning line. Simple by design &mdash; a proof of concept for a fuller,
-possibly collaborative, inventory system.
+A small Excel tool I made for my shifts at Shakopee Brewhall, for keeping track of labels on
+the canning line. Nothing fancy. I mostly wanted to see if a bigger version would be worth
+building.
 </p>
 <p class="links">
 <a href="labels.xlsm">Download (.xlsm)</a>
